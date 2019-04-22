@@ -35,14 +35,14 @@ public class BookRepositoryIntegrationTests {
         List<Book> books = (List<Book>) repository.findAll();
 
         System.out.println("Books are " + books.get(0));
-        System.out.println("Books are " + books.get(1));
+    //    System.out.println("Books are " + books.get(1));
       //  assertFalse(books.isEmpty());
        // assertEquals(1, books.size());
     }
 
     @Test
     public void testFindByName() throws Exception {
-        Book b1 = repository.findByName("B1");
+        Book b1 = repository.findByName("N1");
        // assertNotNull(b1);
         assertEquals("A1", b1.getAuthor());
     }
